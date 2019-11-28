@@ -1,0 +1,20 @@
+" Filetype customizations
+autocmd FileType javascript,typescript set expandtab sw=4 ts=4 sts=4
+autocmd FileType gitcommit set tw=72
+
+" Colors and theme
+let g:solarized_termtrans=1
+
+set background=dark
+colorscheme solarized
+
+
+" Ignore certain things from Ctrl-P and NERDTree
+set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
+set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
+set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
+set wildignore+=*/tmp/cache/assets/*/sprockets/*,*/tmp/cache/assets/*/sass/*
+set wildignore+=*.swp,*~,._*
+set wildignore+=*.mako.py,*.pyc,*/tmp/*,*/node_modules/*,*/bower_components/*,*/target/*,*/dist/*,*/build/*,*/public/packs*
+
+let NERDTreeIgnore = ["\.mako.py$", "\.pyc$", "target", "tmp", "node_modules", "bower_components", "public/packs", "build/"]
