@@ -1,5 +1,6 @@
 " Filetype customizations
 autocmd FileType javascript,typescript set expandtab sw=4 ts=4 sts=4
+autocmd FileType terraform set expandtab sw=2 ts=2 sts=2
 autocmd FileType gitcommit set tw=72
 
 " Colors and theme
